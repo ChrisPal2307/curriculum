@@ -13,12 +13,12 @@ initial-scale=1.0">
 
     <header>
         <h1>Christian Palma</h1>
-        <p>Estudiante | chripalm@espol.edu.ec | 0963818585</p>
+        <address>Estudiante | <a href="mailto:chripalm@espol.edu.ec">chripalm@espol.edu.ec</a> | <a href="tel:+5930963818585">0963818585</a></address>
     </header>
     <nav>
         <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#resumen">Resumen</a>
+            <li><a href="#habilidades">Habilidades</a>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#Proyectos">Proyectos</a></li>
         </ul>
@@ -97,8 +97,64 @@ initial-scale=1.0">
                     <a href="https://github.com/ChrisPal2307/Redes-Transformer">Traductor Inglés - Español</a> 
                 </li>
             </ul>
+        </section>
 
+        <section id="formulario-contacto">
+            <h2>Formulario de contacto</h2>
+            <p>Para recibir información o aplicar a oportunidades, complete el siguiente formulario con datos relevantes sobre su perfil y disponibilidad.</p>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Christian Palma" required>
+                </div>
 
+                <div>
+                    <label for="area">Área de interés</label>
+                    <select id="area" name="area" required>
+                        <option value="">Seleccione un área</option>
+                        <option value="desarrollo-web">Desarrollo web</option>
+                        <option value="inteligencia-artificial">Inteligencia artificial</option>
+                        <option value="datos">Ciencia de datos</option>
+                        <option value="redes">Redes y seguridad</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Disponibilidad</legend>
+                    <div>
+                        <input type="radio" id="disponibilidad-tiempo-completo" name="disponibilidad" value="tiempo-completo" required>
+                        <label for="disponibilidad-tiempo-completo">Tiempo completo</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="disponibilidad-medio-tiempo" name="disponibilidad" value="medio-tiempo">
+                        <label for="disponibilidad-medio-tiempo">Medio tiempo</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="disponibilidad-practicas" name="disponibilidad" value="practicas">
+                        <label for="disponibilidad-practicas">Prácticas</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="herramientas">Herramientas o tecnologías conocidas</label>
+                    <select id="herramientas" name="herramientas" multiple size="4">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="tensorflow">TensorFlow</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje o comentario</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa su experiencia o disponibilidad..."></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar formulario</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer>
