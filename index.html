@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 
 <body>
@@ -23,9 +23,11 @@ initial-scale=1.0">
             <li><a href="#Proyectos">Proyectos</a></li>
         </ul>
     </nav>
+     <img id = "photo" src="https://picsum.photos/300/200" alt="Imagen aleatoria Picsum">
+
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>
                 Soy un estudiante apasionado por la tecnología que valora al 
                 carácter científico y matemático como pilar fundamental para 
@@ -36,7 +38,7 @@ initial-scale=1.0">
         </section>
         
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <ul>
                 <li>
                     <strong>Curiosidad y aprendizaje autodidacta</strong>
@@ -76,7 +78,7 @@ initial-scale=1.0">
 
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ul>
                 <li>Escuela Superior Politécnica del Litoral - Ingeniería en Ciencias de la Computación (2024 - presente)</li>
                 <li>Unidad Educativa Teniente Hugo Ortiz - Bachillerato en Ciencias (2021 - 2024)</li>
@@ -85,7 +87,7 @@ initial-scale=1.0">
 
         
         <section id="proyectos">
-            <h2>Proyectos recientes</h2>
+            <h2 class="subtitle">Proyectos recientes</h2>
             <ul>
                 <li>
                     <a href="https://github.com/ChrisPal2307/Redes-Neuronales">Redes neuronales desde cero</a> 
@@ -100,12 +102,14 @@ initial-scale=1.0">
         </section>
 
         <section id="formulario-contacto">
-            <h2>Formulario de contacto</h2>
+            <h2 class="subtitle">Formulario de contacto</h2>
             <p>Para recibir información o aplicar a oportunidades, complete el siguiente formulario con datos relevantes sobre su perfil y disponibilidad.</p>
             <form action="#" method="post">
                 <div>
                     <label for="nombre">Nombre completo</label>
+
                     <input type="text" id="nombre" name="nombre" placeholder="Ej. Christian Palma" required>
+
                 </div>
 
                 <div>
@@ -124,7 +128,6 @@ initial-scale=1.0">
                     <div>
                         <input type="radio" id="disponibilidad-tiempo-completo" name="disponibilidad" value="tiempo-completo" required>
                         <label for="disponibilidad-tiempo-completo">Tiempo completo</label>
-                    </div>
                     <div>
                         <input type="radio" id="disponibilidad-medio-tiempo" name="disponibilidad" value="medio-tiempo">
                         <label for="disponibilidad-medio-tiempo">Medio tiempo</label>
